@@ -26,7 +26,7 @@ function MainPage(){
 function App() {
 
   return (
-        <Router>
+        <Router basename="/gym-app">
             <Routes>
                 <Route path="/" element={<MainPage/>}/>
                 <Route path="/login" element={<Login/>}/>
