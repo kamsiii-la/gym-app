@@ -1,0 +1,12 @@
+.testimonial{
+    background-color: #fff8f0;
+}
+
+.testimonial-center{
+    text-align: center;
+}
+
+.testimonial-center h2{
+    margin: 0;
+    padding: 20px;
+}

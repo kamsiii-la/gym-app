@@ -1,0 +1,59 @@
+.program-card{
+    display: flex;
+    flex-direction: row;
+    max-width: 1500px;
+    width: 90%;
+    margin: 0 auto;
+    gap: 3rem;
+    text-align: center;
+    padding: 20px 20px 50px 20px ;
+}
+
+.programs-info{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    border: 2px solid #fff8f0;
+    padding: 10px 15px;
+    font-size: 13px;
+    border-radius: 15px;
+    color: #fff8f0;
+}
+
+.prog-button button{
+    padding: 10px 25px;
+    border: none;
+    cursor: pointer;
+    background-color:#fff8f0;
+    color: #92140c;
+    font-weight: 600;
+    border-radius: 2px;
+}
+
+
+.prog-button button:active{
+    background-color: #f6eadc;
+}
+
+.prog-exe {
+    margin: 10px;
+}
+
+.prog-des p,
+.prog-exe h3{
+    margin: 0;
+    font-size: 17.5px;
+}
+
+@media (max-width: 768px) {
+    .program-card{
+        display: grid;
+        grid-template-rows: repeat(1, 1fr);
+    }
+    .programs-info{
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+

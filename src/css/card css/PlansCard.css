@@ -1,0 +1,53 @@
+.plans-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 1500px;
+    width: 90%;
+    margin: 0 auto;
+    gap: 3rem;
+    text-align: center;
+}
+
+.offered ul{
+    list-style: none;
+    padding: 0;
+}
+
+.offered  li{
+    display: flex;
+    flex-direction: row;
+    line-height: 2rem;
+}
+
+.plan-info{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #1e1e24;
+    padding:50px;
+    font-size: 15px;
+    border-radius: 15px;
+    color: #92140c;
+}
+
+.plans-button button{
+    padding: 15px 20px;
+    cursor: pointer;
+    background-color: #92140c;
+    color: #fff8f0;
+    border: none;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .plans-card{
+        display: grid;
+        grid-template-rows: repeat(1, 1fr);
+    }
+    .programs-info{
+        display: flex;
+        flex-direction: column;
+    }
+
+}
