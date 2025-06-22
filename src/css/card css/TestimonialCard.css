@@ -1,61 +1,67 @@
-.testimonialCard{
+.testimonialCard {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
     justify-content: center;
     padding: 20px;
     margin: 0 auto;
-    width: 80%;
-    max-width: 1500px;
+    width: 90%;
+    max-width: 1200px;
 }
 
-.testimonial-card{
+.testimonial-card {
     padding: 20px;
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 
-
-.testimonial-img-name-title{
+.testimonial-img-name-title {
     display: flex;
-    flex-direction: row;
     align-items: center;
     gap: 1rem;
 }
 
-
-.testimonial-pic img{
-    width: 50px;
-    background-position: center;
-    background-size: cover;
-    border-radius: 50px;
+.testimonial-pic img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #e0e0e0;
 }
 
-.testimonial-name-title h3{
+.testimonial-name-title h3 {
     margin: 0;
+    font-size: 1rem;
 }
 
-.testimonial-name-title p{
+.testimonial-name-title p {
+    margin: 0;
     color: gray;
+    font-size: 0.875rem;
 }
 
-.testimonial-message{
+.testimonial-message {
     margin-top: 10px;
 }
 
-.testimonial-message p{
+.testimonial-message p {
     color: #1e1e24;
+    font-size: 0.95rem;
     text-align: justify;
+    line-height: 1.5;
 }
 
-@media (max-width: 768px) {
-    .testimonialCard{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        width: 400px;
-    }
-    .programs-info{
-        display: flex;
-        flex-direction: column;
+/* Optional: Add smooth spacing for smaller screens */
+@media (max-width: 480px) {
+    .testimonialCard {
+        gap: 1.2rem;
+        padding: 10px;
+        width: 95%;
     }
 
+    .testimonial-message p {
+        font-size: 0.9rem;
+    }
 }
