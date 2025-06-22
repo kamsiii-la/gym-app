@@ -142,20 +142,26 @@
 
 
 @media (max-width: 480px)  {
-    .contact{
+    .contact {
         display: flex;
         flex-direction: column;
     }
+
     .contact .rightSide {
         border-left: none;
     }
-    .contact form textarea {
-        height: 70px;
-        width: 81%;
-        border:1px solid lightgray;
-        color: black;
+
+    .contact form {
+        padding: 20px;
     }
-    .socmed-link a{
+
+    .contact form input,
+    .contact form textarea {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .socmed-link a {
         font-size: 40px;
         width: 100px;
         height: 70px;
